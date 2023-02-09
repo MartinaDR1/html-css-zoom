@@ -19,18 +19,25 @@
     margin: auto;
 }
 
-
 img{
     max-width: 100%;
 }
+
+a{
+    text-decoration: none;
+}
+
 
 /*Header*/
 
 #app-header{
     background-color: var(--bg_dark);
-    position:sticky;
-    bottom: 0;
+
+    position: sticky;
     left: 0;
+    top: 0;
+
+    z-index: 99;
 }
 
 #app-header .btn-view{
@@ -39,8 +46,7 @@ img{
 }
 
 .speaker,
-.square{
-    color: white;
+.expand{
     background-color:var(--bg_secondary);
 
     margin: 0.2rem;
@@ -49,6 +55,9 @@ img{
     border-radius: 0.3rem;
 }
 
+.btn-view a{
+    color: var(--light);
+}
 /*Main*/
 
 #app-main{
@@ -96,9 +105,12 @@ img{
     display: flex;
     justify-content: space-between;
 
-    color: var(--light);
-
     padding: 0.75rem 0;
+   
+}
+
+.item a{
+    color: var(--light);
 }
 
 ul li{
@@ -109,6 +121,7 @@ ul li{
 ul{
     display: flex;
     text-align: center;
+    
 }
 
 li span{
@@ -117,11 +130,11 @@ li span{
     margin-top: 5px;
 }
 
-.right{
+.end a{
     background-color: var(--bg_secondary);
     color: var(--end);
-    padding: 0.75rem;
-
+    padding: 15px 10px;
+    
     font-size: 12px;
 
 }
