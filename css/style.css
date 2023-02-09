@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow:hidden;
+}
+
+:root{
+    --bg_dark: #000000;
+    --bg_primary: #222222;
+    --bg_secondary: #4a4a4a;
+    --light: #e8e9ea;
+    --details: #45b407;
+    --end: #fa0b12;
+}
+
+.container{
+    width: 90%;
+    max-width: 1152px;
+    margin: auto;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+/*Header*/
+
+#app-header{
+    background-color: var(--bg_dark);
+}
+
+#app-header .btn-view{
+    display: flex;
+   justify-content: flex-end;
+}
+
+.speaker,
+.square{
+    color: white;
+    background-color:var(--bg_secondary);
+
+    margin: 0.2rem;
+    padding: 0.1rem 0.3rem; 
+    font-size: 12px;
+    border-radius: 0.3rem;
+}
+
+/*Main*/
+
+#app-main{
+    background-color: var(--bg_dark);
+    height: 100vh;
+
+    overflow: scroll;
+}
+
+.container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.row > .card{
+    width: calc(100% / 7 - 8px);
+   
+    margin: 5px 1px;
+    position: relative;
+}
+
+.card .text{
+    position: absolute;
+    bottom:5px;
+    left: 0;
+    
+    background-color: #22222277;
+    color: white;
+
+    font-size: 12px;
+    padding: 1px;
+}
