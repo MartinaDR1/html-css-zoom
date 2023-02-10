@@ -14,8 +14,8 @@
 }
 
 .container{
-    width: 90%;
-    max-width: 1152px;
+    width: 95%;
+    max-width: 1150px;
     margin: auto;
 }
 
@@ -26,7 +26,6 @@ img{
 a{
     text-decoration: none;
 }
-
 
 /*Header*/
 
@@ -98,7 +97,8 @@ a{
     position:sticky;
     bottom: 0;
     left: 0;
-    
+
+    padding-bottom: 2px;
 }
 
 .item{
@@ -130,11 +130,16 @@ li span{
     margin-top: 5px;
 }
 
+.success > a{
+    color: var(--details);
+}
+
 .end a{
     background-color: var(--bg_secondary);
     color: var(--end);
-    padding: 15px 10px;
+    padding: 13px 10px 30px 10px;
+
     
-    font-size: 12px;
+    font-size: 14px;
 
 }
